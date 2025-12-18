@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Ultra Modern Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1><span class="lang" data-lang="en">Ultra Modern Website</span><span class="lang" data-lang="am">አዳዲስ ዘመናዊ ድህረ ገጽ</span></h1>
+<div id="hamburger"><div></div><div></div><div></div></div>
+</header>
+<nav id="mainNav">
+<a href="index.html" class="active"><span class="lang" data-lang="en">Home</span><span class="lang" data-lang="am">መነሻ</span></a>
+<a href="about.html"><span class="lang" data-lang="en">About</span><span class="lang" data-lang="am">ስለ እኛ</span></a>
+<a href="services.html"><span class="lang" data-lang="en">Services</span><span class="lang" data-lang="am">አገልግሎቶች</span></a>
+<a href="gallery.html"><span class="lang" data-lang="en">Gallery</span><span class="lang" data-lang="am">ምስሎች</span></a>
+<a href="news.html"><span class="lang" data-lang="en">News</span><span class="lang" data-lang="am">ዜና</span></a>
+<a href="statistics.html"><span class="lang" data-lang="en">Statistics</span><span class="lang" data-lang="am">ስኬቶች</span></a>
+</nav>
+<button id="langToggle">EN / አማ</button>
+
+<!-- Announcements -->
+<section data-aos="fade-up">
+<div id="announcements">
+<span id="announcement-text">📢 <span class="lang" data-lang="en">Welcome to the ultra modern website! &nbsp;</span>
+<span class="lang" data-lang="am">እንኳን ወደ ዘመናዊ ድህረ ገጽ በደህና መጡ! &nbsp;</span></span>
+<button onclick="pauseScroll()">⏸ Pause</button>
+<button onclick="resumeScroll()">▶ Resume</button>
+<button onclick="restartScroll()">🔄 Restart</button>
+</div>
+</section>
+
+<!-- Flip Card -->
+<section data-aos="fade-right">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h3><span class="lang" data-lang="en">Interactive Feature</span><span class="lang" data-lang="am">ተግባራዊ ባህሪ</span></h3>
+      <p><span class="lang" data-lang="en">Hover to see flip card effect</span><span class="lang" data-lang="am">ይሽንት ላይ ይጫወቱ</span></p>
+    </div>
+    <div class="flip-card-back">
+      <p><span class="lang" data-lang="en">You can add text, images or buttons here!</span><span class="lang" data-lang="am">እዚህ ጽሑፍ፣ ምስሎች ወይም ቁልፎችን ማካተት ይችላሉ!</span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- News Card -->
+<section data-aos="fade-up">
+<div class="card">
+  <img src="images/news1.jpg" alt="News 1">
+  <h3><span class="lang" data-lang="en">New Feature Launched!</span><span class="lang" data-lang="am">አዳዲስ ባህሪ ተከፍቷል!</span></h3>
+  <p><span class="lang" data-lang="en">Check out our latest news update.</span><span class="lang" data-lang="am">የቅርብ ዜና ዝርዝር ይመልከቱ።</span></p>
+  <button class="news-btn">👍 Like</button>
+  <button class="news-btn">👎 Dislike</button>
+  <button class="news-btn">🔄 Share</button>
+  <button class="news-btn">💬 Comment</button>
+</div>
+</section>
+
+<!-- Gallery -->
+<section data-aos="fade-up">
+<h2><span class="lang" data-lang="en">Gallery</span><span class="lang" data-lang="am">ምስሎች</span></h2>
+<div class="gallery">
+<img src="images/gallery1.jpg" alt="Gallery 1">
+<img src="images/gallery2.jpg" alt="Gallery 2">
+<img src="images/gallery3.jpg" alt="Gallery 3">
+<img src="images/gallery4.jpg" alt="Gallery 4">
+</div>
+<div id="lightbox"></div>
+</section>
+
+<!-- Statistics -->
+<section data-aos="fade-up">
+<h2><span class="lang" data-lang="en">Statistics</span><span class="lang" data-lang="am">ስኬቶች</span></h2>
+<div class="stat-box">
+<p><span class="lang" data-lang="en">Visitors</span><span class="lang" data-lang="am">ጎብኚዎች</span></p>
+<div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+<p><span class="lang" data-lang="en">Projects Completed</span><span class="lang" data-lang="am">ተጠናቀቁ ፕሮጀክቶች</span></p>
+<div class="progress-bar"><div class="progress" data-width="65%"></div></div>
+</div>
+</section>
+
+<footer data-aos="fade-up">
+<p>© 2025 Ultra-Modern Demo Website | Designed by ChatGPT</p>
+</footer>
+
+<button id="darkToggle">🌓</button>
+<button id="backToTop">⬆️</button>
+<button id="fabChat">💬</button>
+
+<div id="chatBox">
+<h3><span class="lang" data-lang="en">Chat with Us</span><span class="lang" data-lang="am">ከእኛ ጋር ውይይት</span></h3>
+<textarea rows="3" placeholder="Type message..."></textarea>
+<button class="btn"><span class="lang" data-lang="en">Send</span><span class="lang" data-lang="am">አስገባ</span></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Ultra Modern Demo</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+<h1><span class="lang" data-lang="en">Ultra Modern Website</span><span class="lang" data-lang="am">አዳዲስ ዘመናዊ ድህረ ገጽ</span></h1>
+<div id="hamburger"><div></div><div></div><div></div></div>
+</header>
+<nav id="mainNav">
+<a href="index.html" class="active"><span class="lang" data-lang="en">Home</span><span class="lang" data-lang="am">መነሻ</span></a>
+<a href="about.html"><span class="lang" data-lang="en">About</span><span class="lang" data-lang="am">ስለ እኛ</span></a>
+<a href="services.html"><span class="lang" data-lang="en">Services</span><span class="lang" data-lang="am">አገልግሎቶች</span></a>
+<a href="gallery.html"><span class="lang" data-lang="en">Gallery</span><span class="lang" data-lang="am">ምስሎች</span></a>
+<a href="news.html"><span class="lang" data-lang="en">News</span><span class="lang" data-lang="am">ዜና</span></a>
+<a href="statistics.html"><span class="lang" data-lang="en">Statistics</span><span class="lang" data-lang="am">ስኬቶች</span></a>
+</nav>
+<button id="langToggle">EN / አማ</button>
+
+<!-- Announcements -->
+<section data-aos="fade-up">
+<div id="announcements">
+<span id="announcement-text">📢 <span class="lang" data-lang="en">Welcome to the ultra modern website! &nbsp;</span>
+<span class="lang" data-lang="am">እንኳን ወደ ዘመናዊ ድህረ ገጽ በደህና መጡ! &nbsp;</span></span>
+<button onclick="pauseScroll()">⏸ Pause</button>
+<button onclick="resumeScroll()">▶ Resume</button>
+<button onclick="restartScroll()">🔄 Restart</button>
+</div>
+</section>
+
+<!-- Flip Card -->
+<section data-aos="fade-right">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <h3><span class="lang" data-lang="en">Interactive Feature</span><span class="lang" data-lang="am">ተግባራዊ ባህሪ</span></h3>
+      <p><span class="lang" data-lang="en">Hover to see flip card effect</span><span class="lang" data-lang="am">ይሽንት ላይ ይጫወቱ</span></p>
+    </div>
+    <div class="flip-card-back">
+      <p><span class="lang" data-lang="en">You can add text, images or buttons here!</span><span class="lang" data-lang="am">እዚህ ጽሑፍ፣ ምስሎች ወይም ቁልፎችን ማካተት ይችላሉ!</span></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- News Card -->
+<section data-aos="fade-up">
+<div class="card">
+  <img src="images/news1.jpg" alt="News 1">
+  <h3><span class="lang" data-lang="en">New Feature Launched!</span><span class="lang" data-lang="am">አዳዲስ ባህሪ ተከፍቷል!</span></h3>
+  <p><span class="lang" data-lang="en">Check out our latest news update.</span><span class="lang" data-lang="am">የቅርብ ዜና ዝርዝር ይመልከቱ።</span></p>
+  <button class="news-btn">👍 Like</button>
+  <button class="news-btn">👎 Dislike</button>
+  <button class="news-btn">🔄 Share</button>
+  <button class="news-btn">💬 Comment</button>
+</div>
+</section>
+
+<!-- Gallery -->
+<section data-aos="fade-up">
+<h2><span class="lang" data-lang="en">Gallery</span><span class="lang" data-lang="am">ምስሎች</span></h2>
+<div class="gallery">
+<img src="images/gallery1.jpg" alt="Gallery 1">
+<img src="images/gallery2.jpg" alt="Gallery 2">
+<img src="images/gallery3.jpg" alt="Gallery 3">
+<img src="images/gallery4.jpg" alt="Gallery 4">
+</div>
+<div id="lightbox"></div>
+</section>
+
+<!-- Statistics -->
+<section data-aos="fade-up">
+<h2><span class="lang" data-lang="en">Statistics</span><span class="lang" data-lang="am">ስኬቶች</span></h2>
+<div class="stat-box">
+<p><span class="lang" data-lang="en">Visitors</span><span class="lang" data-lang="am">ጎብኚዎች</span></p>
+<div class="progress-bar"><div class="progress" data-width="80%"></div></div>
+<p><span class="lang" data-lang="en">Projects Completed</span><span class="lang" data-lang="am">ተጠናቀቁ ፕሮጀክቶች</span></p>
+<div class="progress-bar"><div class="progress" data-width="65%"></div></div>
+</div>
+</section>
+
+<footer data-aos="fade-up">
+<p>© 2025 Ultra-Modern Demo Website | Designed by ChatGPT</p>
+</footer>
+
+<button id="darkToggle">🌓</button>
+<button id="backToTop">⬆️</button>
+<button id="fabChat">💬</button>
+
+<div id="chatBox">
+<h3><span class="lang" data-lang="en">Chat with Us</span><span class="lang" data-lang="am">ከእኛ ጋር ውይይት</span></h3>
+<textarea rows="3" placeholder="Type message..."></textarea>
+<button class="btn"><span class="lang" data-lang="en">Send</span><span class="lang" data-lang="am">አስገባ</span></button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
